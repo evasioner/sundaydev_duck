@@ -1,4 +1,4 @@
-package com.sundaydev.duck.service;
+package com.sundaydev.duck.service.duckuser;
 
 import org.springframework.stereotype.Service;
 
