@@ -18,6 +18,8 @@ public class DuckAuthenticationProvider implements AuthenticationProvider {
 		Collection<SimpleGrantedAuthority> roles = new ArrayList<SimpleGrantedAuthority>();
 		
 		WebAuthenticationDetails webAuthentication = (WebAuthenticationDetails) authentication.getDetails();
+		String ipAddr = webAuthentication.getRemoteAddress();
+		
 		
 		//////////////////////////////////////////////////////////////////////////
 		// 사용자인증 검증 사항 반
